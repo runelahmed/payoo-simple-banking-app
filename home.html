@@ -21,10 +21,73 @@
     <title>Payoo App | Banking | Welcome Home</title>
   </head>
 <body>
-    <header id="home-page" class="container">
-        <h1>welcome to home page</h1>
+    <header id="home-page" class="container home-page" >
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="assets/Group.png" alt="Payoo Icon">
+                <div>
+                    <h5 class="balance">$43439</h5>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="log-out-btn"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+            </div>
+        </div>
+        <!-- Welcome section -->
+        <div class="welcome">
+        <h3 class="welcome-title"><i class="fa-solid fa-fire"></i>Welcome to Payoooo!</h3>
+        <p class="welcome-description">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+        <div class="card-container">
+            <div class="card" id="add-money">
+                <img src="assets/wallet1.png" alt="Add money">
+                <p>Add Money</p>
+            </div>
+            <div class="card" id="cash-out">
+                <img src="assets/send1.png" alt="CashOut">
+                <p>Cashout</p>
+            </div>
+            <div class="card" id="transfer-money">
+                <img src="assets/transaction1.png" alt="Transfer money">
+                <p>Transfer Money</p>
+            </div>
+            <div class="card" id="get-bonus">
+                <img src="assets/bonus1.png" alt="Bonus">
+                <p>Get Bonus</p>
+            </div>
+            <div class="card" id="pay-bill">
+                <img src="assets/purse1.png" alt="Pay Bill">
+                <p>Pay Bill</p>
+            </div>
+            <div class="card" id="transaction">
+                <img src="assets/transaction1.png" alt="transaction">
+                <p>Transactions</p>
+            </div>
+        </div>
+        </div> 
+        <!-- Add Money section -->
+         <div class="add-money-form-container">
+            <h2 class="add-money-form-title">
+                Add Money
+            </h2>
+            <form id="add-money-form" class="add-money-form">
+                <label for="mobile-number">Select A Bank</label>
+                <select name="bank-name" id="select-bank-name" class="select-bank-name">
+                    <option value="select-bank" disabled selected>Select Bank</option>
+                    <option value="bikash">Bikash</option>
+                    <option value="nagad">Nagad</option>
+                    <option value="dbl">DBL</option>
+                </select>
+                <label for="bank-account-number">Bank Account Number</label>
+                <input type="number" name="bank-account-number" id="bank-account-number" placeholder="Enter 11 digit account number"> 
+                <label for="amount">Amount to Add</label>
+                <input type="number" name="amount-number" id="amount-number" placeholder="Add amount to withdrew"> 
+                <label for="pin-number">4 Digit Pin</label>
+                <input type="password" name="pin-number" id="pin-number" placeholder="Enter 4 Digit Pint"> 
+                <button id="login-btn" class="btn btn-login" type="submit">Login</button>
+        </form>
+         </div>
     </header>
-
-
 </body>
 </html>

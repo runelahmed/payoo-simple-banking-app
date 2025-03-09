@@ -89,14 +89,14 @@ img {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-.login-form label {
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
     font-size: .9rem;
 }
 
-.login-form input {
+input, .select-bank-name {
     width: 100%;
     padding: 12px 20px;
     margin-bottom: 10px;
@@ -124,4 +124,112 @@ img {
     background-color: var(--secondary-color);
     border: 2px solid var(--tertiary-color);
     color: var(--tertiary-color);
+}
+
+/* Home page  */
+.home-page {
+    background: #fff;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    background: #fff;
+}
+
+.navbar .navbar-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.navbar-left img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.navbar-left div .balance {
+    font-size: 1rem;
+}
+
+.navbar-left div p{
+    font-size: .8rem;
+}
+
+
+.navbar-right i {
+    margin-right: 5px;
+}
+
+.navbar-right a {
+    color: var(--primary-color);
+}
+
+.welcome {
+    padding: 1.5rem;
+}
+
+.welcome .welcome-title i {
+    margin-right: 5px;
+    color: goldenrod;
+}
+.welcome-title {
+    margin-bottom: 8px;
+    font-size: 1.2;
+}
+
+.welcome .welcome-description{
+font-size: 1rem;
+line-height: 1.4;
+color: var(--primary-color);
+margin-bottom: 1.5rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card-container .card {
+    border: 1px solid #ccc;
+    padding: .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.card p {
+    font-size: .7rem;
+}
+
+/* Add-money-form */
+.add-money-form {
+    background: #fff;
+    margin: 0 auto;
+    padding: 30px 20px;
+    width: 80%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    appearance: none;   /* Removes default arrow in modern browsers */
+    -webkit-appearance: none;  /* Removes default arrow in Safari */
+    -moz-appearance: none;  /* Removes default arrow in Firefox */
+    background: #fff; /* Ensure the background is set */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-money-form-title{
+    text-align: center;
 }
